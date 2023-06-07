@@ -11,17 +11,24 @@ SHARE CONFIGURATION
 }
 
 html{
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
     font-family: 'Epilogue', sans-serif;
     font-size: 19px;
+    height: 100vh;
+    width: 100%;
 } 
 body{
+    min-height: 100%;
+    width: 100%;
+   
+    
+}  
+.wrapper{
     height: 100%;
     width: 100%;
-}  
-
+    overflow: hidden;
+    position: relative;
+}
+ 
 
 /* 
 =================
@@ -34,6 +41,8 @@ HEADER CONFIG
     align-items: center;
     justify-content: space-between;
     padding:0 30px;
+    
+    
 }
 .box{
     width: 300px;
@@ -50,6 +59,7 @@ HEADER CONFIG
     z-index: 1;
     color: black;
     pointer-events: none;
+    
     transition: 0.3s;
 }
 .box nav ul{
@@ -288,10 +298,16 @@ Screen Size Configuration
 */
 
 @media  (min-width: 796px) {
+    body{
+        height: 100%;
+        width: 100%;
+       
+        
+    } 
     .header{
         background-color: hsl(0, 0%, 98%);
         width: 100%;
-        height: 9%;
+        height:9%;
         display:flex;
         justify-content: space-between;
         padding: 0 50px;
