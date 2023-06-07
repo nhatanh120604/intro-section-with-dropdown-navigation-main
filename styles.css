@@ -1,0 +1,517 @@
+/* 
+=================
+SHARE CONFIGURATION  
+=================
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 19px;
+} 
+body{
+    height: 100%;
+    width: 100%;
+}  
+
+
+/* 
+=================
+HEADER CONFIG  
+=================
+*/
+.header{
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 30px;
+}
+.box{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    text-align: left;
+    background-color: hsl(0, 0%, 98%);
+    right:-500px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:0px;
+    z-index: 1;
+    color: black;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.box nav ul{
+    margin: 0px 0px;
+}
+.box nav ul li{
+    list-style: none;
+    
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.box nav ul li a{
+    text-decoration: none;
+    color: #000;
+    opacity: .6;
+}
+nav{
+    margin-top:90px;
+    margin-left: 20px;
+    align-self: flex-start;
+}
+
+.box nav ul li svg{
+    margin-left:6px;
+    scale:1.1;
+
+}
+
+
+.menuvertical{
+    
+    margin-top:15px;
+    margin-left: 20px;
+    padding:0;
+    width: 300px;
+    z-index: 3;
+    height: auto;
+    
+    border-radius: 15px;
+    opacity: 1;
+    transition: 1s;
+    display: none;
+}
+
+.menuvertical li {
+    
+    padding: 18px 0px;
+}
+.box  nav .menuvertical ul li  {
+    margin: 0;
+}
+.box  nav .menuvertical ul li a {
+    margin-left: 20px;
+}
+.uparrow1, .uparrow2{
+    display: none;
+}
+
+.active.uparrow1{
+    display: inline-block;
+}
+.active.uparrow2{
+    display: inline-block;
+}
+.active.downarrow1{
+    display: none;
+}
+.active.downarrow2{
+    display: none;
+}
+
+.active.menu3{
+    display: block;
+}
+.active.textfeature{
+    opacity: 1;
+}
+.active.textcompany{
+    opacity: 1;
+}
+.active.menu4{
+    display: block;
+}
+
+
+
+
+.login2 a, .register2 a, .learnmore a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #000;
+   
+}
+.learnmore a{
+    color: white;
+}
+
+.login2{
+    margin-top: 10px;
+    opacity: .6;
+    display: block;
+    border-style: none;
+    border-radius: 15px;
+    padding: 10px 50px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 98%);
+}
+.register2{
+    opacity: .6;
+    border-radius: 15px;
+    padding: 10px 40px;
+    margin-left:0px;
+    border:solid 2px #000;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1rem;
+    margin-top: 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+.rightheader,.leftheader {
+    display: none;
+}
+.menuicon{
+    font-size: 20px;
+}
+.menuicon2{
+    font-size: 20px;
+    display: none;
+    z-index: 2;
+    transition: 0.3s;
+}
+.menuiconall{
+    z-index: 2;
+}
+
+.active.menuicon{
+    display: none;
+}
+.active.menuicon2{
+    display: block;
+    
+}
+.active.box{
+    opacity: 1;
+    right:0;
+    pointer-events: fill;
+}
+.login2.active.box,.register2:hover, .login2:hover{
+    opacity: 1;
+    transform: scale(1.1);
+        transition: 0.3s;
+}
+.active.main{
+    transition: .3s;
+    opacity: .5;
+}
+
+
+
+/* 
+=================
+MAIN CONFIG  
+=================
+*/
+.left-section{
+    display: none;
+}
+.under-section{
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px;
+}
+.under-section p{
+    text-align: center;
+    opacity: .6;
+    line-height: 30px;
+}
+.under-section h1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+.img1{
+    display: none;
+}
+.img2{
+    width: 100%;
+    height: auto;
+}
+.learnmore{
+    border-radius: 15px;
+    padding: 20px 30px;
+    opacity: 1;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:hsl(0, 0%, 98%) ;
+    background-color: #000;
+    margin-top: 40px;
+    
+}
+/*make the button bigger when hover*/
+.learnmore:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.logo{
+    margin-top: 70px;
+    padding: 0px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* 
+=================
+GRID CONFIG  
+=================
+*/
+
+
+
+/* 
+=================
+Screen Size Configuration 
+=================
+*/
+
+@media  (min-width: 796px) {
+    .header{
+        background-color: hsl(0, 0%, 98%);
+        width: 100%;
+        height: 9%;
+        display:flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        z-index: 4;
+    }
+    
+    .rightheader{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .leftheader{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .leftheader a{
+        margin-left: 40px;
+        opacity: 0.6;
+        color: black;
+        text-decoration: none;
+    }
+    .popup a{
+        opacity: 1;
+    }
+    
+    .leftheader h1{
+        padding-right: 50px;
+        font-weight: 900;
+    }
+    
+    .rightheader *{
+        margin-left: 40px;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 1rem;
+        background-color: hsl(0, 0%, 98%);
+    }
+    
+    .login{
+        border:none;
+        opacity: .6;
+    }
+    .login a, .register a, .learnmore a{
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        color: #000;
+       
+    }
+    .learnmore a{
+        color: white;
+    }
+    .register{
+        border-radius: 13px;
+        padding: 12px 30px;
+        border: solid 2px #000;
+        opacity: .6;
+        margin-right: 60px;
+        margin-left: 40px;
+
+    }
+    header svg{
+        margin-left: 6px;
+        scale: 1.1;
+    }
+    .popup{
+        opacity: .6;
+        position: relative;
+    }
+    .popup:hover{
+        opacity: 1;
+    }
+    
+    .leftheader a:hover{
+        opacity: 1;
+       
+    }
+
+    .register:hover, .login:hover{
+        opacity: 1;
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
+    .h21,.menuiconall{
+        display: none;
+    }
+    .main{
+        background-color: hsl(0, 0%, 98%);
+        width: 100%;
+        height: 92%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .left-section{
+        display: block;
+        background-color:hsl(0, 0%, 98%);
+        width: 58%;
+        height:100%;
+        position: relative;
+    }
+    .left-section h1{
+        font-size: 7rem;
+    }
+    .make{
+        margin-top:140px ;
+    }
+    .left-section p{
+        opacity: .6;
+        margin-top: 80px;
+        line-height: 30px;
+        width: 45%;
+        z-index: 2;
+        
+    }
+    
+    .right-section{
+        background-color: hsl(0, 0%, 98%);
+        width: 42%;
+        height:100%;
+        display: block;
+        
+    }
+    .logo{
+        margin-left: 10px;
+        margin-top: 0px;
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        
+    }
+   
+    .logo svg{
+       scale: 1.2;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        right: 0;
+        position: absolute;
+        top: -20px;
+        max-width: 200px;
+        width: max-content;
+        z-index: 3;
+        height: auto;
+        /* create a blur shadow*/
+        box-shadow: 0 0 40px 0 rgba(0,0,0,0.1);
+        background-color: white;
+        padding: 20px 20px;
+        border-radius: 15px;
+        opacity: 0;
+        transition: .3s;
+    }
+    .menu2{
+        left: 35px;
+        
+        
+    }
+    .active.menu1{
+        top:40px;
+        opacity: 1;
+    }
+    .active.popup1{
+        opacity: 1;
+    }
+    .active.menu2{
+        top:40px;
+        opacity: 1;
+    }
+    .active.popup2{
+        opacity: 1;
+    }
+    .uparrowdes1,.uparrowdes2{
+        display: none;
+    }
+    .active.uparrowdes1{
+        display: inline;
+    }
+    .active.downarrowdes1{
+        display: none;
+    }
+    .active.uparrowdes2{
+        display: inline;
+    }
+    .active.downarrowdes2{
+        display: none;
+    }
+    .menu a{
+        margin: 10px 15px;
+        opacity: .6;
+    }
+    .menu li{
+        list-style: none;
+        margin-top:20px;
+    }
+
+    
+   
+    .img1{
+        display: inline;
+        width: 100%;
+        height: 100%;
+    }
+    .img2{
+        display: none;
+    }
+    .under-section{display: none;}
+}
